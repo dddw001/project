@@ -1,0 +1,35 @@
+根据图片的src变换图片
+
+相当于拖着一个点在走
+
+
+
+-50  77-50
+-1   76
+x=0 第0张图片
+x=1  1
+x=76 76
+x=77 0
+所以 用模运算
+
+Math.floor()向下取整
+
+display2.js:
+频繁切换图片的src不太好 卡
+1.把每拖一个像素改变一张图片改成每拖10个像素改变一张图片
+2.创建img对象数组，把切换src变成显示隐藏
+
+display3.js:
+松手之后图片应该继续旋转且缓慢停止
+
+
+ie9图片显示之后再加载，所以要预加载
+(function(oNewImg){
+      var oImg=new Image();
+    oImg.onload=function(){
+      oNewImg.src=this.src;
+    }
+    oImg.src="./img/miaov ("+i+").jpg";
+    oNewImg.style.display='none';
+    document.body.appendChild(oNewImg);
+    })(document.createElement('img'));
