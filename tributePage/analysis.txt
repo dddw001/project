@@ -1,0 +1,24 @@
+1.最外层的div，随着页面宽度的减小，首先是固定宽度1，然后是固定宽度2，然后随着页面宽度的减小而减小
+2.图片大小也随着最外层的div变化
+
+<em> 语义标签 强调文本 斜体显示
+<i> 无语义 斜体
+<strong> 语义标签 强调文本 粗体显示 比em强调程度大
+
+<blockquote> 定义摘自另一个源的块引用
+<cite> 表示对什么的引用 斜体表示
+<q> 短引用
+
+img的alt属性 当浏览器无法显示图片时，就用它的值代替图片
+
+hr 如果边缘有瑕疵 可设置border:0
+hr样式：border:0;border-top: 1px solid #eee;
+
+空格 &nbsp;
+字与字 letter-spacing
+词与词 word-spacing
+行距 line-height
+段落开头 text-indent 一般为2em
+段落之间 margin-top
+
+-2018.2.6

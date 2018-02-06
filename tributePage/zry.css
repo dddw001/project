@@ -1,0 +1,32 @@
+*{margin: 0;padding: 0}
+body{margin-top: 60px;}
+.text-center{text-align: center;}
+
+.container{padding-left: 15px;padding-right: 15px;margin-left: auto;margin-right: auto;}
+.container .center{background: #eee;margin-bottom: 30px;border-radius: 6px;padding-bottom: 20px;}
+.container .center .wrapper .main h1{margin-bottom: 20px;font-weight: 500;}
+.container .center .wrapper .main h2{margin-bottom: 10px;font-weight: 500;letter-spacing: 5px;}
+.container .center .wrapper .main .thumbnail{padding: 4px;margin-bottom: 20px;background: #fff;border: 1px solid #ddd;border-radius: 4px;}
+.container .center .wrapper .main .thumbnail img{width: 100%;}
+.container .center .wrapper .main .caption{padding: 9px;color: #333;}
+.container .center .wrapper .main .introduce{max-width: 60%;margin-left: 20%;}
+.container .center .wrapper .main .introduce h3{font-size: 30px;font-weight: 500;margin-bottom: 10px;}
+.container .center .wrapper .main .introduce ul{font-size: 14px; margin-bottom: 20px;}
+.container .center .wrapper .main .introduce cite{font-size: 12px;color: #777;}
+.container .center .wrapper .main .introduce .more{font-size: 20px;margin-top: 20px;font-weight: 500;}
+.container .center .wrapper .main .introduce .more a{text-decoration: none;}
+.container .foot hr{margin-top: 20px;margin-bottom: 20px;border:0;border-top: 1px solid #eee;}
+.container .foot p{font-size: 12px;}
+.container .foot a{text-decoration: none;}
+
+@media (min-width:1200px){
+  .container{width: 1170px;}
+}
+@media (min-width:992px) and (max-width:1200px){
+  .container{width: 970px;}
+}
+@media (min-width:768px) and (max-width:992px){
+  .container{width: 750px;}
+  .container .center{padding-left: 60px;padding-right: 60px;padding-top: 48px;padding-bottom: 48px;}
+  .container .center .wrapper .main h1{font-size: 63px;}
+}
