@@ -1,0 +1,22 @@
+
+
+.team h4{font-size: 20px;margin-top: 20px;margin-bottom: 20px;}
+
+.team-list{padding: 0 10em;}
+.team-list .team-item{float: left;padding: 0 25px;}
+.team-list .team-item a{padding: 1em;}
+.team-list .team-item .team-img{width: 100%;border: 1px solid #ddd;padding: 0.8em;margin-bottom: 2em;}
+.team-list .team-item img{width: 100%;}
+.team-list .team-item .team-name{font-size: 1.3em;text-align: left;}
+.team-list .team-item .team-en{margin-bottom: 1.4em;line-height: 2em;text-align: left;}
+.team-list .team-item p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:3;line-height: 2em;overflow: hidden;color: #777;}
+
+
+
+
+
+
+
+@media  (min-width:992px){
+  .team-list .team-item{width: 33%;}
+}

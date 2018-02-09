@@ -1,0 +1,10 @@
+.hdhx{padding: 0 10em;}
+.hdhx h4{font-size: 1.5em;padding: 2em 0;}
+.hdhx ul{float: left;padding: 0 1em;}
+.hdhx ul img{width: 100%;}
+.hdhx ul li{padding-bottom: 2em;margin-bottom: 2em;background: #eee;}
+
+
+@media  (min-width:992px){
+  .hdhx ul{width: 25%;}
+}
