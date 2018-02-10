@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">   
+  <style>
+    .navbar-header{width: 20%;}
+    .navbar-header .logo{padding-left: 10%;padding-top: 10%;}
+    .navbar-header .logo img{width: 50px;}
+
+    .title{margin-bottom: 30px;}
+    .title-wrap{text-align: center;font-size: 32px;font-weight: 300;font-family: europa;letter-spacing: 0.01em;line-height: 1.4em;margin-left: 15%;margin-right: 15%;padding-left: 10%;padding-right: 10%;color: #000;}
+
+    
+    .wrap{position: relative;overflow: hidden;height: 100vh;}
+
+    .container-item:hover{opacity: 0.6;}
+    .container-item img{width: 100%;height: 100%;}
+    
+    .nav li a:hover{background: rgba(0, 0, 0, 0);}
+
+    .pop-up{position: fixed;left: 0;top: 0;width: 100vw;height: 100vh;background: #000;text-align: center;z-index: 100;}
+    .pop-up ul{position: absolute;top: 50%;margin-top: -60px;left: 50%;margin-left: -125px;}
+    .pop-up ul li{list-style: none;}
+    .pop-up ul li a{color: #fff;font-size: 20px;line-height: 30px;}
+    .pop-up .close{color: #ffffff;position: absolute;top: 20px;right: 50px;opacity: 1;}
+
+    .nav-fix{position: fixed;top: 0;left: 0;width: 100vw;height: 80px;z-index: 10;background: white;}
+    .nav-fix .logo{width: 36px;position: relative;top: 50%;margin-top:-11px;margin-left: 20px;}
+    .nav-fix .logo img{width: 100%;}
+
+    .nav-fix .menu{float: right;font-size: 20px;margin-right: 20px;top: 50%;margin-top: -20px;position: relative;cursor: pointer;}
+
+
+    @media  (max-width:768px){
+      .title-wrap{margin-left: 0;margin-right: 0;}
+      #nav{display: none;}
+      .title{margin-top: 80px;}
+    }
+    @media (min-width:768px){
+      .nav-fix{display: none;}
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mark Dearman</title>
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="nav">
+    <div class="navbar" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="logo"><img src="img/md.png" alt=""></div>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">DESIGN & DIRECTION</a></li>
+          <li><a href="#">PHOTOGRAPHY</a></li>
+          <li><a href="#">R&D</a></li>
+          <li><a href="#">PROFILE</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="title">
+    <div class="title-wrap">
+      <span>A selection of brand,motion and digital design work</span>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="container-item fk">
+      <div class="wrap">
+        <img class="item-img" src="img/fk.jpg" alt="" style="width:100%;">
+      </div>
+    </div>
+    <div class="container-item ysl">
+      <div class="wrap">
+        <img class="item-img" src="img/ysl.jpg" alt="" style="width:100%;">
+      </div>
+    </div>
+    <div class="container-item wh">
+      <div class="wrap">
+        <img class="item-img" src="img/wh.jpg" alt="" style="width:100%;">
+      </div>
+    </div>
+    <div class="container-item dar">
+      <div class="wrap">
+        <img class="item-img" src="img/dar.jpg" alt="" style="width:100%;">
+      </div>
+    </div>
+    <div class="container-item true">
+      <div class="wrap">
+        <img class="item-img" src="img/true.jpg" alt="" style="width:100%;">
+      </div>
+    </div>
+    <div class="container-item adlib">
+      <div class="wrap">
+        <img class="item-img" src="img/adlib.jpg" alt="" style="width:100%;">
+      </div>
+    </div>
+  </div>
+  <div class="pop-up" style="display:none">
+    <div class="close">
+      <span>X</span>
+    </div>
+    <ul>
+      <li><a href="#">DESIGN & DIRECTION</a></li>
+      <li><a href="#">PHOTOGRAPHY</a></li>
+      <li><a href="#">R&D</a></li>
+      <li><a href="#">PROFILE</a></li>      
+    </ul>
+  </div>
+  <div class="nav-fix">
+    <div class="logo">
+      <img src="img/md.png" alt="">
+    </div>
+    <div class="menu"><span class="glyphicon glyphicon-align-justify"></span></div>
+  </div>
+  <script>
+    window.onload=function(){
+      var iLastHeigth=document.documentElement.clientHeight;
+      var aWrap=document.getElementsByClassName('wrap');
+      var aImg=document.getElementsByClassName('item-img');
+      var oPopup=document.getElementsByClassName('pop-up')[0];
+      var oClose=document.getElementsByClassName('close')[0];       
+      var oMenu=document.getElementsByClassName('menu')[0];
+      //console.log(aImg[0].offsetWidth);
+      
+      toCenter();
+      window.onresize=getHeight;
+
+      oMenu.onclick=function(){
+        oPopup.style.display="block";
+        oClose.onclick=function(){
+          oPopup.style.display="none";
+        }
+      }
+
+      
+
+      function getHeight(){
+        var iHeight=document.documentElement.clientHeight-iLastHeigth;
+        if(iHeight!=0){
+          toCenter();
+        }
+        iLastHeigth=document.documentElement.clientHeight;
+      }
+
+      function toCenter(){
+        for(var i=0;i<aImg.length;i++){
+          aImg[i].style.position="absolute";
+          aImg[i].style.top=aWrap[i].offsetHeight/2+'px';
+          aImg[i].style.marginTop=-aImg[i].offsetHeight/2+'px';
+        }
+      }
+    }
+    
+  </script>
+</body>
+</html>
