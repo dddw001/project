@@ -1,0 +1,62 @@
+body{background: #d8d8d5;}
+.header{position: fixed;z-index: 100;width: 100%;}
+.menu{height: 44px;background: url('../img/righe.jpg') repeat scroll 0 0 transparent;}
+
+.nav-outer{background: #fff;}
+.nav{height: 62px;width: 546px;;margin: 0 auto;}
+.nav li a{font-family: Georgia, "Times New Roman", Times, serif;font-style: italic;font-size: 15px;color: #666;display: block;padding: 20px 47px 0 0;}
+.nav li a:hover{background-color: transparent;color: #000;}
+.logo{width: 93px;height: 109px;margin-right: 20px;}
+.logo a{width: 100%;height: 100%;position: relative;} 
+.logo-img{position: absolute;top: -20px;left:0px;z-index: 10;display: block;}
+
+.part1{background: url('../img/bg_works.png');width: 100%;height: 895px;padding-top: 153px;position: relative;overflow: hidden;}
+.part1 .cssawards{position: absolute;top: 106px;left: 0;}
+.part1 .awards{position: absolute;top: 196px;left:0;}
+.grigio{height: 400px;width: 100%;background: url('../img/bg_grigio.png');z-index: 1;position: absolute;top: 580px;}
+.parallax img{position: absolute;}
+img#base{top: 40px;left: -140px;z-index: 4;}
+img#colori{top: 190px;left: 380px;z-index: 3;}
+img#light{top:-2px;left: 20px;z-index: 0;}
+img#fish{top: 190px;left: 460px;z-index: 30;}
+img#cerchio{top: 410px;left: 344px;z-index: 5;}
+img#particles{top: 385px;left: 242px;z-index: 5;}
+img#penna{top: 460px;left: 155px;z-index: 5;}
+img#mela{top: 284px;left: 788px;z-index: 5;}
+img#cerchio2{top: 480px;left: 744px;z-index: 5;}
+img#bomboletta{top: 460px;left: 731px;z-index: 6;}
+img#mouse{top: 265px;left: 707px;z-index: 6;}
+img#bolla{top: 384px;left: 224px;z-index: 40;}
+img#uccello{top: 190px;left: 284px;z-index: 6;}
+img#ciambella{top: 459px;left: 320px;z-index: 40;}
+img#occhiali{top: 100px;left: 800px;z-index: 40;}
+
+.part2{width: 100%;background: url('../img/guarda.png') no-repeat center;height: 596px;}
+.part2 p{font-family: 'LeagueGothicRegular';text-align: center;color: #fff;}
+.part2 .text1{font-size: 28px;padding-top: 320px;letter-spacing: -5px;text-indent: -10px;word-spacing: 2px;}
+.part2 .text2{font-size: 44px;top:-10px;letter-spacing: -5px;}
+.part2 .line{background-color: #dd1049;width: 340px;height: 1px;margin: 0 auto;}
+.part2 #freccia{display: block;margin: 0 auto;}
+
+.part3 .gallery{width: 956px;margin: 0 auto;height: 230px;}
+.part3 .thumbnails{display: block;float: left;position: relative;width: 229px;height: 229px;margin: 5px;}
+.part3 img.a{opacity: 1;position: absolute;left: 0;z-index: 10;}
+.part3 img.b{position: absolute;left: 0;}
+
+.part4{padding-top: 120px;}
+.part4 .wrap{width: 949px;margin: 0 auto;}
+.ico-text{width: 232px;height: 249px;float: left;}
+.ico-text h5{font: 30px 'LeagueGothicRegular',Times New Roman,Times,serif;color: #dd1049;letter-spacing: -5px;}
+.part4 .line{width: 232px;height: 1px;background-color: #dd1049;margin-bottom: 5px;}
+.ico-text p{font: italic 16px Georgia, "Times New Roman", Times, serif;color: #494949;}
+
+.desc{width: 949px;height: 140px; margin: 250px auto 50px;background: url('../img/ggg.png');}
+.desc p{font: italic 19px Georgia, "Times New Roman", Times, serif;color: #fff;line-height: 24px;padding: 20px;}
+
+.footer{width: 100%;height: 65px;position: fixed;z-index: 200;bottom: 0;}
+.puntale{width: 85px;height: 24px;background: url('../img/puntale.png');position: relative;margin: 0 auto;z-index: 202;}
+.navigator{height: 42px;width: 100%;background: #000;}
+.logomini{background: url('../img/logomini.png');z-index: 202;position: relative;height: 33px;width: 32px;margin: 0 auto;top: -10px;}
+.copyright{height: 10px;width: 949px;margin: 0 auto;display: block;text-align: center;top: -5px;position: relative;}
+.copyright p{font-family: Georgia, "Times New Roman", Times, serif;font-style: italic;font-size: 10px;color:  #b5b5b5;}
+

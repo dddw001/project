@@ -1,0 +1,5 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ul li{list-style: none;float: left;}
+a{text-decoration: none;}
+.clearfix:before{content: "";height:0;line-height: 0;display: block;visibility: hidden;clear: both;}
+.clearfix{zoom: 1;}
