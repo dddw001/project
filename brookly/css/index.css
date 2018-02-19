@@ -1,0 +1,42 @@
+body{overflow-x: hidden;}
+.navbar-info{height: 49px;background-color: #313131;text-transform: uppercase;font-size: 13.5px;color: #bababa;line-height: 49px;}
+.navbar-info > div:first-child{padding-left: 0px;height: 100%;}
+.languageSelector{position: relative;z-index: 100;padding-left: 30px;cursor: pointer;width: 210px}
+.languageSelector .bsc-content span{color: #767676;}
+.languageSelector .bsc-content .selectedLang{color: #bababa;}
+.bsc-bg{display: none;position: absolute;left: 0;top: 0;width: 235px;background: #fff;}
+.shoppingCart a{color: #bababa;text-decoration: none;}
+
+.inner-menu{height: 90px;text-transform: uppercase;}
+.inner-menu li{list-style: none;float: left;margin: 20px;}
+.inner-menu li a{color: #313131;text-decoration: none;font-size: 20px;}
+
+.part1{width: 100%;margin-top: 150px;margin-bottom: 80px;}
+.part1 video{width: 100%;}
+
+.part2{text-align: center;width: 80%;margin: 0 auto;}
+.part2 .title{font-weight: bold;}
+.part2 .subtitle{color: #6c6c6c;font-size: 15px;line-height: 23px;margin-bottom: 50px;}
+.part2 .item{margin-left: 5px;margin-right: 5px;margin-bottom: 20px;}
+.part2 .item img{width: 100%;}
+.part2 .item h4{font-weight: bold;letter-spacing: -2px;}
+.part2 .item .price{color: #6c6c6c;}
+.part2 .item .old{text-decoration: line-through;}
+.part2 .btn{background: #000;color: #fff;border-radius: 0;margin-bottom: 50px;}
+
+.part3{text-align: center;width: 80%;margin: 0 auto 100px;}
+.part3 .title{font-weight: bold;}
+.part3 .subtitle{color: #6c6c6c;font-size: 15px;line-height: 23px;margin-bottom: 50px;}
+.part3 .item{margin-left: 5px;margin-right: 5px;margin-bottom: 20px;}
+.part3 .item img{width: 100%;}
+.part3 .item h4{font-weight: bold;letter-spacing: -2px;}
+.part3 .item p{color: #6c6c6c;}
+
+.part4 .media-logo{width: 80%;margin: 0 auto 50px;text-align: center;}
+.part4 .media-logo img{margin: 20px;}
+.part4 .email{text-align: center;}
+.part4 .email p{font-weight: bold;font-size: 20px;}
+.part4 .email input{border: none;border-bottom: 1px solid #6c6c6c;width: 300px;}
+.part4 .email input::-ms-input-placeholder{text-align: center;}
+.part4 .email input::-webkit-input-placeholder{text-align: center;}
+.part4 button{background: #000;color: #fff;border:none;margin-bottom: 50px;margin-top: 30px;}
